@@ -1,8 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.homescreen {
+  display: flex;
+  justify-content: center;
+}
+.homescreen .navbar {
+  width: 1140px;
+  margin-top: 14px;
+  margin-bottom: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.homescreen .navbar .navbar__elements {
+  float: right;
+}
+.homescreen .navbar .navbar__elements a {
+  padding: 0 8px 0px 8px;
+  text-decoration: none;
+  display: inline-block;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  text-transform: uppercase;
+  outline: none;
+}
+
 body {
   background-image: -webkit-linear-gradient(90deg, #f45622 0%, #f53e54 100%);
   font-family: "Poppins", sans-serif;
 }
 
+.first {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+}
+.first .first__background {
+  text-align: center;
+}
 .first .first__background .first__text {
   color: #fff;
   width: 640px;
@@ -35,9 +122,60 @@ body {
   display: inline-block;
   transition: all 0.3s ease 0s;
   text-decoration: none;
-  width: 640px;
+  width: 160px;
 }
 .first .first__background .first__text a:hover {
   background-color: transparent;
   color: white;
-}/*# sourceMappingURL=styles.css.map */  
+}
+
+.second {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+.second .second__background {
+  width: 1140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+.second .second__background .second__text {
+  background-color: white;
+  box-shadow: 0px 0px 50px 0px rgba(157, 157, 157, 0.3);
+  z-index: 2;
+}
+.second .second__background .second__text .second__text-bar {
+  z-index: 2;
+  background-color: white;
+  width: 530px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  margin-right: 40px;
+}
+.second .second__background .second__text .second__text-bar h2 {
+  padding-bottom: 30px;
+  font-size: 30px;
+  color: #222222;
+  line-height: 1.2em !important;
+  margin-bottom: 0;
+  margin-top: 0;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+.second .second__background .second__text .second__text-bar p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #777777;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.625em;
+}
+.second .second__background .nature {
+  margin-top: 120px;
+  margin-bottom: 120px;
+  box-shadow: 1px 1px 3px grey;
+  z-index: 1;
+}/*# sourceMappingURL=styles.css.map */

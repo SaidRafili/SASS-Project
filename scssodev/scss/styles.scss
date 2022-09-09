@@ -1,5 +1,7 @@
-@import "_reset.scss";
-@import "layout/header.scss";
+@import "base/reset";
+@import "layout/header";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 body{
     background-image: -webkit-linear-gradient(90deg, #f45622 0%, #f53e54 100%);
@@ -7,7 +9,12 @@ body{
 }
 
 .first{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:500px;
     .first__background{
+        text-align: center;
         .first__text{
             color: #fff;
             width: 640px;
@@ -43,7 +50,7 @@ body{
                 display: inline-block;
                 transition: all 0.3s ease 0s;
                 text-decoration: none;
-                width: 640px;
+                width: 160px;
             }
             
             a:hover{
@@ -54,4 +61,60 @@ body{
             }
         }
     
+}
+
+.second{
+    background-color:white;
+    display: flex;
+    justify-content: center;
+    .second__background{
+        width: 1140px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction:row-reverse;
+
+        .second__text{
+            background-color: white;
+            box-shadow: 0px 0px 50px 0px rgb(157 157 157 / 30%);
+            z-index: 2;
+            
+            .second__text-bar{
+                z-index: 2;
+                background-color: white;
+                width: 530px;
+                margin-top: 60px;
+                margin-bottom: 60px;
+                margin-right: 40px;
+
+                h2{
+                    padding-bottom: 30px;
+                    font-size: 30px;
+                    color: #222222;
+                    line-height: 1.2em !important;
+                    margin-bottom: 0;
+                    margin-top: 0;
+                    font-weight: 600;
+                    font-family: "Poppins", sans-serif;
+                }
+
+                p{
+                    margin-top: 0;
+                    margin-bottom: 1rem;
+                    color: #777777;
+                    font-family: "Poppins", sans-serif;
+                    font-weight: 300;
+                    font-size: 14px;
+                    line-height: 1.625em;
+                }
+            }
+        }
+
+        .nature{
+            margin-top: 120px;
+            margin-bottom: 120px;
+            box-shadow: 1px 1px 3px grey;
+            z-index: 1;
+        }
+    }
 }
