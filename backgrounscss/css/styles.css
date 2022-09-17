@@ -1,0 +1,7 @@
+body{
+    height: 150vh;
+    background-image: url(/images/istanbul.jpg), url(/images/bosphorus.jpg);
+    background-position:center, center;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 700px,250vh;
+}
