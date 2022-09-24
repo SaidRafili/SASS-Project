@@ -145,6 +145,8 @@ body {
   background-color: white;
   box-shadow: 0px 0px 50px 0px rgba(157, 157, 157, 0.3);
   z-index: 2;
+  transform: matrix(1, 0, 0, 1, -30, 0);
+  position: relative;
 }
 .second .second__background .second__text .second__text-bar {
   z-index: 2;
@@ -178,4 +180,30 @@ body {
   margin-bottom: 120px;
   box-shadow: 1px 1px 3px grey;
   z-index: 1;
+}
+
+.progression {
+  background-color: #F9F9FF;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.progression progress[value] {
+  /* Reset the default appearance */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  width: 750px;
+  height: 60px;
+}
+.progression progress[value]::-webkit-progress-bar {
+  background-color: #eee;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+.progression progress[value]::-webkit-progress-value {
+  background-image: -webkit-linear-gradient(-45deg, transparent 33%, rgba(0, 0, 0, 0.1) 33%, rgba(0, 0, 0, 0.1) 66%, transparent 66%), -webkit-linear-gradient(top, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), -webkit-linear-gradient(left, #f45622, #f53e54 100%);
+  border-radius: 2px;
+  background-size: 100px, 5px, 100% 100%, 100% 100%;
 }/*# sourceMappingURL=styles.css.map */
